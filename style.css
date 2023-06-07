@@ -190,6 +190,20 @@ footer {
   .logo img {
     max-width: 80px;
   }
+  .header{
+    flex-direction: column;
+}
+.logo{
+    margin-bottom: 30px;
+}
+.menu li{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.mid_text {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 
   /* Пример адаптации размера текста в шапке */
   nav ul.menu li a {
@@ -239,6 +253,47 @@ footer {
 }
 
 .custom-container {
-  max-width: 600px;
+  max-width: 4000px;
   margin: 0 auto;
 }
+.slider-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.slider {
+  display: flex;
+  width: fit-content;
+  transition: transform 1s ease-in-out;
+}
+
+.slider img {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.prev-button,
+.next-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  background: blue;
+  color: yellow;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
